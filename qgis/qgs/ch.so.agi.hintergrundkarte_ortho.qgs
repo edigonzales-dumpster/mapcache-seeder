@@ -1,0 +1,950 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="ch.so.agi.hintergrundkarte_ortho" version="3.4.7-Madeira">
+  <homePath path=""/>
+  <title>ch.so.agi.hintergrundkarte_ortho</title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>47</srsid>
+      <srid>2056</srid>
+      <authid>EPSG:2056</authid>
+      <description>CH1903+ / LV95</description>
+      <projectionacronym>somerc</projectionacronym>
+      <ellipsoidacronym>bessel</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer name="maske" expanded="0" source="/geodata/ch.so.agi.hintergrundkarte/maske.tif" checked="Qt::Checked" providerKey="gdal" id="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer name="kantonsgrenze" expanded="0" source="/geodata/ch.so.agi.kantonsgrenze/kantonsgrenze.shp" checked="Qt::Checked" providerKey="ogr" id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer name="ch.swisstopo.orthofoto_2018.rgb" expanded="1" source="/geodata/ch.swisstopo.orthofoto_2018.rgb/ch.swisstopo.orthofoto_2018.rgb.gpkg" checked="Qt::Checked" providerKey="gdal" id="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer name="ch.swisstopo.sentinel_2018" expanded="1" source="/geodata/ch.swisstopo.sentinel_2018/ch.swisstopo.sentinel_2018.gpkg" checked="Qt::Checked" providerKey="gdal" id="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a</item>
+      <item>maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf</item>
+      <item>kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1</item>
+      <item>ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings tolerance="12" mode="2" unit="1" type="1" enabled="0" intersection-snapping="0">
+    <individual-layer-settings>
+      <layer-setting tolerance="12" type="1" enabled="0" units="1" id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>2583139.44172985386103392</xmin>
+      <ymin>1216505.44185760268010199</ymin>
+      <xmax>2648438.60846311878412962</xmax>
+      <ymax>1257092.52523233066312969</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer showFeatureCount="0" name="maske" drawingOrder="-1" checked="Qt::Checked" open="false">
+      <filegroup hidden="false" open="false">
+        <legendlayerfile layerid="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf" isInOverview="0" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" name="kantonsgrenze" drawingOrder="-1" checked="Qt::Checked" open="false">
+      <filegroup hidden="false" open="false">
+        <legendlayerfile layerid="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1" isInOverview="0" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" name="ch.swisstopo.orthofoto_2018.rgb" drawingOrder="-1" checked="Qt::Checked" open="true">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35" isInOverview="0" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer showFeatureCount="0" name="ch.swisstopo.sentinel_2018" drawingOrder="-1" checked="Qt::Checked" open="true">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile layerid="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a" isInOverview="0" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>2572326.97076271194964647</xmin>
+      <ymin>1183041.71305003273300827</ymin>
+      <xmax>2681945.39576271269470453</xmax>
+      <ymax>1283059.20055003254674375</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>2572326.97076271194964647</xmin>
+      <ymin>1183041.71305003273300827</ymin>
+      <xmax>2681945.39576271269470453</xmax>
+      <ymax>1283059.20055003254674375</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>2572326.97076271194964647</xmin>
+      <ymin>1183041.71305003273300827</ymin>
+      <xmax>2681945.39576271269470453</xmax>
+      <ymax>1283059.20055003254674375</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectlayers>
+    <maplayer minScale="50000" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="raster" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="1" maxScale="1">
+      <extent>
+        <xmin>2592000</xmin>
+        <ymin>1214000.00000000069849193</ymin>
+        <xmax>2644999.99999999906867743</xmax>
+        <ymax>1262000</ymax>
+      </extent>
+      <id>ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35</id>
+      <datasource>/geodata/ch.swisstopo.orthofoto_2018.rgb/ch.swisstopo.orthofoto_2018.rgb.gpkg</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ch.swisstopo.orthofoto_2018.rgb</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList useSrcNoData="0" bandNo="2"/>
+        <noDataList useSrcNoData="0" bandNo="3"/>
+        <noDataList useSrcNoData="0" bandNo="4"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer alphaBand="4" greenBand="2" opacity="1" type="multibandcolor" redBand="1" blueBand="3">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeRed="255" colorizeGreen="128" colorizeStrength="100" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="4" zoomedOutResampler="bilinear"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer minScale="4e+6" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="raster" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="1" maxScale="15000">
+      <extent>
+        <xmin>2384000</xmin>
+        <ymin>990000</ymin>
+        <xmax>2989000</xmax>
+        <ymax>1415000</ymax>
+      </extent>
+      <id>ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a</id>
+      <datasource>/geodata/ch.swisstopo.sentinel_2018/ch.swisstopo.sentinel_2018.gpkg</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ch.swisstopo.sentinel_2018</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList useSrcNoData="0" bandNo="2"/>
+        <noDataList useSrcNoData="0" bandNo="3"/>
+        <noDataList useSrcNoData="0" bandNo="4"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>0</Searchable>
+      </flags>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer alphaBand="4" greenBand="2" opacity="1" type="multibandcolor" redBand="1" blueBand="3">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeRed="255" colorizeGreen="128" colorizeStrength="100" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="4" zoomedOutResampler="bilinear" zoomedInResampler="bilinear"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer simplifyMaxScale="1" minScale="1e+8" labelsEnabled="0" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="vector" styleCategories="AllStyleCategories" simplifyDrawingTol="1" autoRefreshEnabled="0" simplifyAlgorithm="0" readOnly="0" refreshOnNotifyMessage="" geometry="Polygon" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" maxScale="0" simplifyLocal="1">
+      <extent>
+        <xmin>2592560.71900000004097819</xmin>
+        <ymin>1213703.18999999994412065</ymin>
+        <xmax>2644759.74599999981001019</xmax>
+        <ymax>1261330.17699999990873039</ymax>
+      </extent>
+      <id>kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1</id>
+      <datasource>/geodata/ch.so.agi.kantonsgrenze/kantonsgrenze.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>kantonsgrenze</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 forceraster="0" enableorderby="0" preprocessing="0" type="invertedPolygonRenderer">
+        <renderer-v2 forceraster="0" enableorderby="0" type="RuleRenderer" symbollevels="0">
+          <rules key="{4ca774eb-c729-48d0-acea-3748d555f2af}">
+            <rule symbol="0" scalemaxdenom="4000000" key="{f178e212-c527-4700-b1a1-d692a20774dd}" scalemindenom="50000"/>
+            <rule symbol="1" scalemaxdenom="49999" key="{1e844c80-4dfb-4443-8b3a-2fa8057f78e2}" scalemindenom="1"/>
+          </rules>
+          <symbols>
+            <symbol clip_to_extent="1" alpha="1" name="0" type="fill" force_rhr="0">
+              <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                <prop v="255,255,255,128" k="color"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="0,0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="35,35,35,255" k="outline_color"/>
+                <prop v="no" k="outline_style"/>
+                <prop v="0.26" k="outline_width"/>
+                <prop v="MM" k="outline_width_unit"/>
+                <prop v="solid" k="style"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+                <prop v="square" k="capstyle"/>
+                <prop v="5;2" k="customdash"/>
+                <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
+                <prop v="MM" k="customdash_unit"/>
+                <prop v="1" k="draw_inside_polygon"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="255,255,255,168" k="line_color"/>
+                <prop v="solid" k="line_style"/>
+                <prop v="2" k="line_width"/>
+                <prop v="MM" k="line_width_unit"/>
+                <prop v="0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="0" k="ring_filter"/>
+                <prop v="0" k="use_custom_dash"/>
+                <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+            <symbol clip_to_extent="1" alpha="1" name="1" type="fill" force_rhr="0">
+              <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+                <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+                <prop v="152,125,183,255" k="color"/>
+                <prop v="bevel" k="joinstyle"/>
+                <prop v="0,0" k="offset"/>
+                <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                <prop v="MM" k="offset_unit"/>
+                <prop v="255,255,255,168" k="outline_color"/>
+                <prop v="solid" k="outline_style"/>
+                <prop v="0.6" k="outline_width"/>
+                <prop v="MM" k="outline_width_unit"/>
+                <prop v="no" k="style"/>
+                <data_defined_properties>
+                  <Option type="Map">
+                    <Option name="name" type="QString" value=""/>
+                    <Option name="properties"/>
+                    <Option name="type" type="QString" value="collection"/>
+                  </Option>
+                </data_defined_properties>
+              </layer>
+            </symbol>
+          </symbols>
+        </renderer-v2>
+      </renderer-v2>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
+        <DiagramCategory width="15" scaleBasedVisibility="0" maxScaleDenominator="1e+8" minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" sizeType="MM" scaleDependency="Area" backgroundColor="#ffffff" penAlpha="255" barWidth="5" diagramOrientation="Up" rotationOffset="270" height="15" backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" labelPlacementMethod="XHeight" penWidth="0" penColor="#000000" opacity="1" enabled="0" lineSizeType="MM">
+          <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings obstacle="0" priority="0" placement="1" zIndex="0" linePlacementFlags="18" dist="0" showAll="1">
+        <properties>
+          <Option type="Map">
+            <Option name="name" type="QString" value=""/>
+            <Option name="properties"/>
+            <Option name="type" type="QString" value="collection"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+        <activeChecks/>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="t_id">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="t_ili_tid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="kantonsnam">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="kantonskue">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="kantonsnum">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias name="" field="t_id" index="0"/>
+        <alias name="" field="t_ili_tid" index="1"/>
+        <alias name="" field="kantonsnam" index="2"/>
+        <alias name="" field="kantonskue" index="3"/>
+        <alias name="" field="kantonsnum" index="4"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default applyOnUpdate="0" expression="" field="t_id"/>
+        <default applyOnUpdate="0" expression="" field="t_ili_tid"/>
+        <default applyOnUpdate="0" expression="" field="kantonsnam"/>
+        <default applyOnUpdate="0" expression="" field="kantonskue"/>
+        <default applyOnUpdate="0" expression="" field="kantonsnum"/>
+      </defaults>
+      <constraints>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="t_id" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="t_ili_tid" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="kantonsnam" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="kantonskue" constraints="0"/>
+        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="kantonsnum" constraints="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="t_id"/>
+        <constraint exp="" desc="" field="t_ili_tid"/>
+        <constraint exp="" desc="" field="kantonsnam"/>
+        <constraint exp="" desc="" field="kantonskue"/>
+        <constraint exp="" desc="" field="kantonsnum"/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
+      </attributeactions>
+      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+        <columns>
+          <column name="t_id" type="field" hidden="0" width="-1"/>
+          <column name="t_ili_tid" type="field" hidden="0" width="-1"/>
+          <column type="actions" hidden="1" width="-1"/>
+          <column name="kantonsnam" type="field" hidden="0" width="-1"/>
+          <column name="kantonskue" type="field" hidden="0" width="-1"/>
+          <column name="kantonsnum" type="field" hidden="0" width="-1"/>
+        </columns>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field name="fid" editable="1"/>
+        <field name="kantonskue" editable="1"/>
+        <field name="kantonskuerzel" editable="1"/>
+        <field name="kantonsnam" editable="1"/>
+        <field name="kantonsname" editable="1"/>
+        <field name="kantonsnum" editable="1"/>
+        <field name="kantonsnummer" editable="1"/>
+        <field name="t_id" editable="1"/>
+        <field name="t_ili_tid" editable="1"/>
+      </editable>
+      <labelOnTop>
+        <field labelOnTop="0" name="fid"/>
+        <field labelOnTop="0" name="kantonskue"/>
+        <field labelOnTop="0" name="kantonskuerzel"/>
+        <field labelOnTop="0" name="kantonsnam"/>
+        <field labelOnTop="0" name="kantonsname"/>
+        <field labelOnTop="0" name="kantonsnum"/>
+        <field labelOnTop="0" name="kantonsnummer"/>
+        <field labelOnTop="0" name="t_id"/>
+        <field labelOnTop="0" name="t_ili_tid"/>
+      </labelOnTop>
+      <widgets/>
+      <previewExpression>fid</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer minScale="1e+8" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="raster" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" maxScale="0">
+      <extent>
+        <xmin>2315000</xmin>
+        <ymin>913000</ymin>
+        <xmax>3059000</xmax>
+        <ymax>1415000</ymax>
+      </extent>
+      <id>maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf</id>
+      <datasource>/geodata/ch.so.agi.hintergrundkarte/maske.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>maske</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1">
+          <noDataRange min="0" max="0"/>
+        </noDataList>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>0</Searchable>
+      </flags>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer alphaBand="-1" grayBand="1" gradient="WhiteToBlack" opacity="1" type="singlebandgray">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <contrastEnhancement>
+            <minValue>1</minValue>
+            <maxValue>1</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </contrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeRed="255" colorizeGreen="128" colorizeStrength="100" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a"/>
+    <layer id="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf"/>
+    <layer id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1"/>
+    <layer id="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35"/>
+  </layerorder>
+  <properties>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WCSUrl type="QString"></WCSUrl>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WFSTLayers>
+      <Update type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <Paths>
+      <Absolute type="bool">true</Absolute>
+    </Paths>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:4326</value>
+      <value>EPSG:2056</value>
+    </WMSCrsList>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSRootName type="QString">ch.so.agi.hintergrundkarte_ortho</WMSRootName>
+    <WMSContactOrganization type="QString">AGI SO</WMSContactOrganization>
+    <WCSLayers type="QStringList"/>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WMTSJpegLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSJpegLayers>
+    <WMSExtent type="QStringList">
+      <value>2570000</value>
+      <value>1208000</value>
+      <value>2667000</value>
+      <value>1268000</value>
+    </WMSExtent>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <Gui>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+    </Gui>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WFSLayers type="QStringList"/>
+    <PAL>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <TextFormat type="int">0</TextFormat>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <SearchMethod type="int">0</SearchMethod>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+    </PAL>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSServiceTitle type="QString">ch.so.agi.hintergrundkarte_ortho</WMSServiceTitle>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WMTSPngLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSPngLayers>
+    <WMTSLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSLayers>
+    <DefaultStyles>
+      <Opacity type="double">1</Opacity>
+      <Fill type="QString"></Fill>
+      <ColorRamp type="QString"></ColorRamp>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+    </DefaultStyles>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title>ch.so.agi.hintergrundkarte_ortho</title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author>vagrant</author>
+    <creation>2019-05-04T13:05:38</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapcache>
+  <metadata>
+    <title>WMTS / Amt für Geoinformation Kanton Solothurn</title>
+    <abstract>None</abstract>
+    <!-- You might want to remove the following line when running the container locally -->
+    <!--<url>https://geo.so.ch/api</url>-->
+  </metadata>
+
+  <grid name="2056">
+    <metadata>
+      <title>CH1903+ / LV95</title>
+    </metadata>
+    <origin>top-left</origin>
+    <srs>EPSG:2056</srs>
+    <units>m</units>
+    <extent>2570000,1208000,2667000,1268000</extent>
+    <!--eCH-0056 v3-->
+    <!--0.05 will not be seeded-->
+    <resolutions>4000,2000,1000,500,250,100,50,20,10,5,2.5,1,0.5,0.25,0.1,0.05</resolutions>
+    <size>256 256</size>
+  </grid>
+
+  <cache name="sqlite" type="sqlite3">
+    <dbfile>/tiles/{tileset}-{z}-{grid}.db</dbfile>
+    <detect_blank/>
+    <creation_retry>3</creation_retry>    
+  </cache>
+
+  <cache name="disk" type="disk">
+    <base>/tmp</base>
+    <symlink_blank/>   
+    <creation_retry>3</creation_retry>
+  </cache>
+
+  <format name="myjpeg" type ="JPEG">
+    <quality>80</quality>
+    <photometric>YCBCR</photometric>   <!-- RGB | YCBCR -->
+  </format>
+
+  <source name="ch.so.agi.hintergrundkarte_ortho" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/jpeg</FORMAT>
+        <LAYERS>ch.so.agi.hintergrundkarte_ortho</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.so.agi.hintergrundkarte_ortho</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>
+
+  <tileset name="ch.so.agi.hintergrundkarte_ortho">
+    <source>ch.so.agi.hintergrundkarte_ortho</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
+    <format>myjpeg</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>
+
+  <default_format>JPEG</default_format>
+  <service type="wms" enabled="true">
+    <full_wms>assemble</full_wms>
+    <resample_mode>bilinear</resample_mode>
+    <format>JPEG</format>
+    <maxsize>4096</maxsize>
+  </service>
+  <service type="wmts" enabled="true"/>
+  <service type="tms" enabled="false"/>
+  <service type="kml" enabled="false"/>
+  <service type="gmaps" enabled="false"/>
+  <service type="ve" enabled="false"/>
+  <service type="mapguide" enabled="false"/>
+  <service type="demo" enabled="true"/>
+  <errors>report</errors>
+  <locker type="disk">
+    <directory>/tmp</directory>
+    <timeout>300</timeout>
+  </locker>
+</mapcache>
