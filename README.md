@@ -18,16 +18,16 @@ todo: ... Daten müssen im GDI `geodata`-Verzeichnis vorhanden sein... Lokal kop
 * gdal/ogr
 * x2go: (IP: 127.0.0.1, SSH: 2027, vagrant/vagrant)
 * IP: 192.168.50.7
-* "Synced folder" (auf Host) für die Geodaten muss ggf. angepasst werden. Wichtig ist, dass der Mountpoint in der Vagrantmaschine stabil bleibt (`/geodata/`).
-* QGIS-Projekte müssen absolute Pfade verwenden.
+* todo: "Synced folder" (auf Host) für die Geodaten muss ggf. angepasst werden. Wichtig ist, dass der Mountpoint in der Vagrantmaschine stabil bleibt (`/geodata/`).
+* todo: QGIS-Projekte müssen absolute Pfade verwenden.
 
 ## Docker
 * Basisimage: Phusion 0.11
 * QGIS-Server LTR (3.4.x)
 * Mapcache 1.6.1
 * Min-/Max-FCGI-Prozesse sind als Env-Variablen definiert.
-* QGIS-Projektdateien müssen in den Ordner `/XXXXX` gemountet oder kopiert werden.
-* Die Machcache-Konfigurationsdatei muss in den Ordern `/XXXXX` gemountet oder kopiert werden.
+* todo: QGIS-Projektdateien müssen in den Ordner `/XXXXX` gemountet oder kopiert werden.
+* todo: Die Machcache-Konfigurationsdatei muss in den Ordern `/XXXXX` gemountet oder kopiert werden.
 * Die Geodaten müssen immer in den Container gemounted werden. Der Mountpoint muss dem der Vagrantmaschine entsprechen, damit die QGIS-Projektdateien funktionieren.
 
 
@@ -59,6 +59,9 @@ docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi
 - Speicherort von *.qgs: im /vagrant Ordner? Ggf. docker build kopiert es rein.
 - QML trotzdem abspeichern. Master ist aber Projekt.
 - ....
+
+
+- Wichtig: es muss nachvollziehbar und technisch durchführbar sein für andere Mitarbeiter
 
 
 ## TODO
