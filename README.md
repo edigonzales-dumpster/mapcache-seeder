@@ -50,7 +50,7 @@ bash -c "clear && docker exec -it wmts-seeder /bin/bash"
 
 Seeden (vorgängig Container starten):
 ```
-docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,10 -n 2 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,10 -n 4 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 11,14 -n 4 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
 ```
 

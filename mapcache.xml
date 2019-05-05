@@ -33,6 +33,32 @@
     <creation_retry>3</creation_retry>
   </cache>
 
+  <cache name="s3-do" type="s3">
+    <url>https://ch-so-agi-hintergrundkarte-ortho.ams3.digitaloceanspaces.com/{tileset}/{grid}/{z}/{y}/{x}/{ext}</url>
+    <id>xxxxx</id>
+    <secret>yyyyy</secret>
+    <region>ams3</region>
+    <operation type="put">
+      <headers>
+        <x-amz-storage-class>REDUCED_REDUNDANCY</x-amz-storage-class>
+        <x-amz-acl>public-read</x-amz-acl>
+     </headers>
+    </operation>
+  </cache>
+
+  <cache name="s3-exoscale" type="s3">
+    <url>https://sos-ch-dk-2.exo.io/ch.so.agi.wmts/{tileset}/{grid}/{z}/{y}/{x}/{ext}</url>
+    <id>xxxxxx</id>
+    <secret>yyyyyyy</secret>
+    <region>ch-dk-2</region>
+    <operation type="put">
+      <headers>
+        <x-amz-storage-class>REDUCED_REDUNDANCY</x-amz-storage-class>
+        <x-amz-acl>public-read</x-amz-acl>
+     </headers>
+    </operation>
+  </cache>
+
   <format name="myjpeg" type ="JPEG">
     <quality>80</quality>
     <photometric>YCBCR</photometric>   <!-- RGB | YCBCR -->
@@ -54,7 +80,7 @@
 
   <tileset name="ch.so.agi.hintergrundkarte_ortho">
     <source>ch.so.agi.hintergrundkarte_ortho</source>
-    <cache>sqlite</cache>
+    <cache>s3-exoscale</cache>
     <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
     <format>myjpeg</format>
     <metatile>8 8</metatile>
