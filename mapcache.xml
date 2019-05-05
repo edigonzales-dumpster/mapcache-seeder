@@ -80,7 +80,7 @@
 
   <tileset name="ch.so.agi.hintergrundkarte_ortho">
     <source>ch.so.agi.hintergrundkarte_ortho</source>
-    <cache>s3-exoscale</cache>
+    <cache>sqlite</cache>
     <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
     <format>myjpeg</format>
     <metatile>8 8</metatile>
