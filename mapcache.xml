@@ -14,10 +14,11 @@
     <origin>top-left</origin>
     <srs>EPSG:2056</srs>
     <units>m</units>
-    <extent>2570000,1208000,2667000,1268000</extent>
+    <!--<extent>2570000,1208000,2667000,1268000</extent>-->
+    <extent>2420000,1030000,2900000,1350000</extent>
     <!--eCH-0056 v3-->
     <!--0.05 will not be seeded-->
-    <resolutions>4000,2000,1000,500,250,100,50,20,10,5,2.5,1,0.5,0.25,0.1,0.05</resolutions>
+    <resolutions>4000,2000,1000,500,250,100,50,20,10,5,2.5,1,0.5,0.25,0.1</resolutions>
     <size>256 256</size>
   </grid>
 
@@ -78,11 +79,35 @@
     </http>
   </source>
 
+  <source name="ch.bl.agi.lidar_2018.dsm_hillshade" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.bl.agi.lidar_2018.dsm_hillshade</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.bl.agi.lidar_2018.dsm_hillshade</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>
+
   <tileset name="ch.so.agi.hintergrundkarte_ortho">
     <source>ch.so.agi.hintergrundkarte_ortho</source>
     <cache>sqlite</cache>
     <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
     <format>myjpeg</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>
+
+  <tileset name="ch.bl.agi.lidar_2018.dsm_hillshade">
+    <source>ch.bl.agi.lidar_2018.dsm_hillshade</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
+    <format>PNG</format>
     <metatile>8 8</metatile>
     <metabuffer>0</metabuffer>
     <expires>604800</expires>

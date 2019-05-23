@@ -76,6 +76,7 @@ RUN mkdir /mapcache
 COPY mapcache.xml /mapcache/mapcache.xml
 
 COPY qgis/qgs/ch.so.agi.hintergrundkarte_ortho.qgs /data/ch.so.agi.hintergrundkarte_ortho.qgs
+COPY qgis/qgs/ch.bl.agi.lidar_2018.dsm_hillshade.qgs /data/ch.bl.agi.lidar_2018.dsm_hillshade.qgs
 
 EXPOSE 80
 
