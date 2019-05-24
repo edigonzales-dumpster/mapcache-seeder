@@ -50,7 +50,7 @@ docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata -e QGIS_FCGI_MIN_PROCESSES=4
 
 Tiles-Verzeichnis mounten:
 ```
-docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata:cached -v /Volumes/Samsung_T5/tiles:/tiles:cached -e QGIS_FCGI_MIN_PROCESSES=6 -e QGIS_FCGI_MAX_PROCESSES=6 --rm --name wmts-seeder sogis/wmts-seeder
+docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata:cached -v /Users/stefan/tmp/tiles:/tiles:cached -e QGIS_FCGI_MIN_PROCESSES=6 -e QGIS_FCGI_MAX_PROCESSES=6 --rm --name wmts-seeder sogis/wmts-seeder
 ```
 
 In Container einloggen:
@@ -70,6 +70,7 @@ Ausgeführte Befehle:
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dsm_hillshade -f -z 0,14 -n 4
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,14 -n 6 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dtm_hillshade -f -z 0,14 -n 2
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_buildings -f -z 0,14 -n 4
 
 
 ```
