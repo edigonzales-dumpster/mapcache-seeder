@@ -93,6 +93,48 @@
     </http>
   </source>
 
+  <source name="ch.bl.agi.lidar_2018.dtm_hillshade" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.bl.agi.lidar_2018.dtm_hillshade</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.bl.agi.lidar_2018.dtm_hillshade</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>
+
+  <source name="ch.bl.agi.lidar_2018.ndsm_buildings" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.bl.agi.lidar_2018.ndsm_buildings</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.bl.agi.lidar_2018.ndsm_buildings</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>
+
+  <source name="ch.bl.agi.lidar_2018.ndsm_vegetation" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.bl.agi.lidar_2018.ndsm_vegetation</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.bl.agi.lidar_2018.ndsm_vegetation</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>
+
   <tileset name="ch.so.agi.hintergrundkarte_ortho">
     <source>ch.so.agi.hintergrundkarte_ortho</source>
     <cache>sqlite</cache>
@@ -105,6 +147,36 @@
 
   <tileset name="ch.bl.agi.lidar_2018.dsm_hillshade">
     <source>ch.bl.agi.lidar_2018.dsm_hillshade</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
+    <format>PNG</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>
+
+  <tileset name="ch.bl.agi.lidar_2018.dtm_hillshade">
+    <source>ch.bl.agi.lidar_2018.dtm_hillshade</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
+    <format>PNG</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>
+
+  <tileset name="ch.bl.agi.lidar_2018.ndsm_buildings">
+    <source>ch.bl.agi.lidar_2018.ndsm_buildings</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
+    <format>PNG</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>
+
+  <tileset name="ch.bl.agi.lidar_2018.ndsm_vegetation">
+    <source>ch.bl.agi.lidar_2018.ndsm_vegetation</source>
     <cache>sqlite</cache>
     <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
     <format>PNG</format>
