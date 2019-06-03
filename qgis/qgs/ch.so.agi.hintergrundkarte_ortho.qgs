@@ -19,16 +19,16 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer name="maske" expanded="0" source="/geodata/ch.so.agi.hintergrundkarte/maske.tif" checked="Qt::Checked" providerKey="gdal" id="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf">
+    <layer-tree-layer source="/geodata/ch.so.agi.hintergrundkarte/maske.tif" expanded="0" id="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf" checked="Qt::Checked" providerKey="gdal" name="maske">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="kantonsgrenze" expanded="0" source="/geodata/ch.so.agi.kantonsgrenze/kantonsgrenze.shp" checked="Qt::Checked" providerKey="ogr" id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1">
+    <layer-tree-layer source="/geodata/ch.so.agi.kantonsgrenze/kantonsgrenze.shp" expanded="0" id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1" checked="Qt::Checked" providerKey="ogr" name="kantonsgrenze">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="ch.swisstopo.orthofoto_2018.rgb" expanded="1" source="/geodata/ch.swisstopo.orthofoto_2018.rgb/ch.swisstopo.orthofoto_2018.rgb.gpkg" checked="Qt::Checked" providerKey="gdal" id="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35">
+    <layer-tree-layer source="/geodata/ch.swisstopo.orthofoto_2018.rgb/ch.swisstopo.orthofoto_2018.rgb.gpkg" expanded="1" id="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35" checked="Qt::Checked" providerKey="gdal" name="ch.swisstopo.orthofoto_2018.rgb">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer name="ch.swisstopo.sentinel_2018" expanded="1" source="/geodata/ch.swisstopo.sentinel_2018/ch.swisstopo.sentinel_2018.gpkg" checked="Qt::Checked" providerKey="gdal" id="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a">
+    <layer-tree-layer source="/geodata/ch.swisstopo.sentinel_2018/ch.swisstopo.sentinel_2018.gpkg" expanded="1" id="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a" checked="Qt::Checked" providerKey="gdal" name="ch.swisstopo.sentinel_2018">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -38,9 +38,9 @@
       <item>ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings tolerance="12" mode="2" unit="1" type="1" enabled="0" intersection-snapping="0">
+  <snapping-settings mode="2" intersection-snapping="0" enabled="0" tolerance="12" type="1" unit="1">
     <individual-layer-settings>
-      <layer-setting tolerance="12" type="1" enabled="0" units="1" id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1"/>
+      <layer-setting units="1" id="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1" enabled="0" tolerance="12" type="1"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
@@ -69,100 +69,31 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer showFeatureCount="0" name="maske" drawingOrder="-1" checked="Qt::Checked" open="false">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="maske" showFeatureCount="0" open="false">
       <filegroup hidden="false" open="false">
-        <legendlayerfile layerid="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf" isInOverview="0" visible="1"/>
+        <legendlayerfile layerid="maske_5e179f74_51ad_4fea_a8ba_1d06bc5c7faf" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer showFeatureCount="0" name="kantonsgrenze" drawingOrder="-1" checked="Qt::Checked" open="false">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="kantonsgrenze" showFeatureCount="0" open="false">
       <filegroup hidden="false" open="false">
-        <legendlayerfile layerid="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1" isInOverview="0" visible="1"/>
+        <legendlayerfile layerid="kantonsgrenze_101558b7_6543_401b_ac3a_e1a02ebc80f1" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer showFeatureCount="0" name="ch.swisstopo.orthofoto_2018.rgb" drawingOrder="-1" checked="Qt::Checked" open="true">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="ch.swisstopo.orthofoto_2018.rgb" showFeatureCount="0" open="true">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35" isInOverview="0" visible="1"/>
+        <legendlayerfile layerid="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer showFeatureCount="0" name="ch.swisstopo.sentinel_2018" drawingOrder="-1" checked="Qt::Checked" open="true">
+    <legendlayer checked="Qt::Checked" drawingOrder="-1" name="ch.swisstopo.sentinel_2018" showFeatureCount="0" open="true">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a" isInOverview="0" visible="1"/>
+        <legendlayerfile layerid="ch_swisstopo_sentinel_2018_438cdf75_4990_4dbd_a477_d0f2aab3ad8a" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
-  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
-    <units>meters</units>
-    <extent>
-      <xmin>2572326.97076271194964647</xmin>
-      <ymin>1183041.71305003273300827</ymin>
-      <xmax>2681945.39576271269470453</xmax>
-      <ymax>1283059.20055003254674375</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>47</srsid>
-        <srid>2056</srid>
-        <authid>EPSG:2056</authid>
-        <description>CH1903+ / LV95</description>
-        <projectionacronym>somerc</projectionacronym>
-        <ellipsoidacronym>bessel</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
-  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
-    <units>meters</units>
-    <extent>
-      <xmin>2572326.97076271194964647</xmin>
-      <ymin>1183041.71305003273300827</ymin>
-      <xmax>2681945.39576271269470453</xmax>
-      <ymax>1283059.20055003254674375</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>47</srsid>
-        <srid>2056</srid>
-        <authid>EPSG:2056</authid>
-        <description>CH1903+ / LV95</description>
-        <projectionacronym>somerc</projectionacronym>
-        <ellipsoidacronym>bessel</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
-  <mapcanvas name="mAreaCanvas" annotationsVisible="1">
-    <units>meters</units>
-    <extent>
-      <xmin>2572326.97076271194964647</xmin>
-      <ymin>1183041.71305003273300827</ymin>
-      <xmax>2681945.39576271269470453</xmax>
-      <ymax>1283059.20055003254674375</ymax>
-    </extent>
-    <rotation>0</rotation>
-    <destinationsrs>
-      <spatialrefsys>
-        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>47</srsid>
-        <srid>2056</srid>
-        <authid>EPSG:2056</authid>
-        <description>CH1903+ / LV95</description>
-        <projectionacronym>somerc</projectionacronym>
-        <ellipsoidacronym>bessel</ellipsoidacronym>
-        <geographicflag>false</geographicflag>
-      </spatialrefsys>
-    </destinationsrs>
-    <rendermaptile>0</rendermaptile>
-  </mapcanvas>
   <projectlayers>
-    <maplayer minScale="50000" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="raster" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="1" maxScale="1">
+    <maplayer refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="raster" maxScale="1" autoRefreshEnabled="0" autoRefreshTime="0" minScale="50000" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="1">
       <extent>
         <xmin>2592000</xmin>
         <ymin>1214000.00000000069849193</ymin>
@@ -215,11 +146,11 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>false</geographicflag>
+            <geographicflag>true</geographicflag>
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <spatial minx="0" maxy="0" miny="0" crs="" dimensions="2" minz="0" maxx="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -230,10 +161,10 @@
       </resourceMetadata>
       <provider>gdal</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
-        <noDataList useSrcNoData="0" bandNo="2"/>
-        <noDataList useSrcNoData="0" bandNo="3"/>
-        <noDataList useSrcNoData="0" bandNo="4"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+        <noDataList bandNo="4" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -250,7 +181,7 @@
         <property key="identify/format" value="Value"/>
       </customproperties>
       <pipe>
-        <rasterrenderer alphaBand="4" greenBand="2" opacity="1" type="multibandcolor" redBand="1" blueBand="3">
+        <rasterrenderer greenBand="2" blueBand="3" type="multibandcolor" alphaBand="4" redBand="1" opacity="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -261,13 +192,13 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" brightness="0"/>
-        <huesaturation colorizeRed="255" colorizeGreen="128" colorizeStrength="100" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128"/>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeBlue="128" colorizeOn="0" colorizeGreen="128" grayscaleMode="0" colorizeStrength="100" saturation="0" colorizeRed="255"/>
         <rasterresampler maxOversampling="4" zoomedOutResampler="bilinear"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer minScale="4e+6" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="raster" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="1" maxScale="15000">
+    <maplayer refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="raster" maxScale="15000" autoRefreshEnabled="0" autoRefreshTime="0" minScale="4e+6" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="1">
       <extent>
         <xmin>2384000</xmin>
         <ymin>990000</ymin>
@@ -324,7 +255,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <spatial minx="0" maxy="0" miny="0" crs="" dimensions="2" minz="0" maxx="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -335,10 +266,10 @@
       </resourceMetadata>
       <provider>gdal</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1"/>
-        <noDataList useSrcNoData="0" bandNo="2"/>
-        <noDataList useSrcNoData="0" bandNo="3"/>
-        <noDataList useSrcNoData="0" bandNo="4"/>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+        <noDataList bandNo="4" useSrcNoData="0"/>
       </noData>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
@@ -355,7 +286,7 @@
         <property key="identify/format" value="Value"/>
       </customproperties>
       <pipe>
-        <rasterrenderer alphaBand="4" greenBand="2" opacity="1" type="multibandcolor" redBand="1" blueBand="3">
+        <rasterrenderer greenBand="2" blueBand="3" type="multibandcolor" alphaBand="4" redBand="1" opacity="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>None</limits>
@@ -366,13 +297,13 @@
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" brightness="0"/>
-        <huesaturation colorizeRed="255" colorizeGreen="128" colorizeStrength="100" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128"/>
-        <rasterresampler maxOversampling="4" zoomedOutResampler="bilinear" zoomedInResampler="bilinear"/>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeBlue="128" colorizeOn="0" colorizeGreen="128" grayscaleMode="0" colorizeStrength="100" saturation="0" colorizeRed="255"/>
+        <rasterresampler zoomedInResampler="bilinear" maxOversampling="4" zoomedOutResampler="bilinear"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer simplifyMaxScale="1" minScale="1e+8" labelsEnabled="0" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="vector" styleCategories="AllStyleCategories" simplifyDrawingTol="1" autoRefreshEnabled="0" simplifyAlgorithm="0" readOnly="0" refreshOnNotifyMessage="" geometry="Polygon" hasScaleBasedVisibilityFlag="0" simplifyDrawingHints="0" maxScale="0" simplifyLocal="1">
+    <maplayer refreshOnNotifyEnabled="0" simplifyDrawingHints="0" simplifyLocal="1" refreshOnNotifyMessage="" type="vector" maxScale="0" readOnly="0" labelsEnabled="0" autoRefreshEnabled="0" geometry="Polygon" autoRefreshTime="0" minScale="1e+8" simplifyAlgorithm="0" simplifyDrawingTol="1" simplifyMaxScale="1" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>2592560.71900000004097819</xmin>
         <ymin>1213703.18999999994412065</ymin>
@@ -429,7 +360,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <spatial minx="0" maxy="0" miny="0" crs="" dimensions="2" minz="0" maxx="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -453,15 +384,15 @@
         <Removable>1</Removable>
         <Searchable>1</Searchable>
       </flags>
-      <renderer-v2 forceraster="0" enableorderby="0" preprocessing="0" type="invertedPolygonRenderer">
-        <renderer-v2 forceraster="0" enableorderby="0" type="RuleRenderer" symbollevels="0">
+      <renderer-v2 type="invertedPolygonRenderer" preprocessing="0" forceraster="0" enableorderby="0">
+        <renderer-v2 type="RuleRenderer" forceraster="0" enableorderby="0" symbollevels="0">
           <rules key="{4ca774eb-c729-48d0-acea-3748d555f2af}">
-            <rule symbol="0" scalemaxdenom="4000000" key="{f178e212-c527-4700-b1a1-d692a20774dd}" scalemindenom="50000"/>
-            <rule symbol="1" scalemaxdenom="49999" key="{1e844c80-4dfb-4443-8b3a-2fa8057f78e2}" scalemindenom="1"/>
+            <rule scalemaxdenom="4000000" symbol="0" scalemindenom="50000" key="{f178e212-c527-4700-b1a1-d692a20774dd}"/>
+            <rule scalemaxdenom="49999" symbol="1" scalemindenom="1" key="{1e844c80-4dfb-4443-8b3a-2fa8057f78e2}"/>
           </rules>
           <symbols>
-            <symbol clip_to_extent="1" alpha="1" name="0" type="fill" force_rhr="0">
-              <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+            <symbol type="fill" name="0" clip_to_extent="1" force_rhr="0" alpha="1">
+              <layer class="SimpleFill" enabled="1" locked="0" pass="0">
                 <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
                 <prop v="255,255,255,128" k="color"/>
                 <prop v="bevel" k="joinstyle"/>
@@ -475,13 +406,13 @@
                 <prop v="solid" k="style"/>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" type="QString" value=""/>
+                    <Option type="QString" name="name" value=""/>
                     <Option name="properties"/>
-                    <Option name="type" type="QString" value="collection"/>
+                    <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
               </layer>
-              <layer class="SimpleLine" pass="0" enabled="1" locked="0">
+              <layer class="SimpleLine" enabled="1" locked="0" pass="0">
                 <prop v="square" k="capstyle"/>
                 <prop v="5;2" k="customdash"/>
                 <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -500,15 +431,15 @@
                 <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" type="QString" value=""/>
+                    <Option type="QString" name="name" value=""/>
                     <Option name="properties"/>
-                    <Option name="type" type="QString" value="collection"/>
+                    <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
               </layer>
             </symbol>
-            <symbol clip_to_extent="1" alpha="1" name="1" type="fill" force_rhr="0">
-              <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+            <symbol type="fill" name="1" clip_to_extent="1" force_rhr="0" alpha="1">
+              <layer class="SimpleFill" enabled="1" locked="0" pass="0">
                 <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
                 <prop v="152,125,183,255" k="color"/>
                 <prop v="bevel" k="joinstyle"/>
@@ -522,9 +453,9 @@
                 <prop v="no" k="style"/>
                 <data_defined_properties>
                   <Option type="Map">
-                    <Option name="name" type="QString" value=""/>
+                    <Option type="QString" name="name" value=""/>
                     <Option name="properties"/>
-                    <Option name="type" type="QString" value="collection"/>
+                    <Option type="QString" name="type" value="collection"/>
                   </Option>
                 </data_defined_properties>
               </layer>
@@ -541,17 +472,17 @@
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory width="15" scaleBasedVisibility="0" maxScaleDenominator="1e+8" minScaleDenominator="0" lineSizeScale="3x:0,0,0,0,0,0" sizeType="MM" scaleDependency="Area" backgroundColor="#ffffff" penAlpha="255" barWidth="5" diagramOrientation="Up" rotationOffset="270" height="15" backgroundAlpha="255" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" labelPlacementMethod="XHeight" penWidth="0" penColor="#000000" opacity="1" enabled="0" lineSizeType="MM">
-          <fontProperties style="" description="Sans Serif,9,-1,5,50,0,0,0,0,0"/>
-          <attribute field="" color="#000000" label=""/>
+        <DiagramCategory minimumSize="0" backgroundColor="#ffffff" labelPlacementMethod="XHeight" minScaleDenominator="0" penWidth="0" penAlpha="255" enabled="0" opacity="1" scaleDependency="Area" scaleBasedVisibility="0" penColor="#000000" maxScaleDenominator="1e+8" width="15" diagramOrientation="Up" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" height="15" sizeScale="3x:0,0,0,0,0,0" barWidth="5" sizeType="MM" rotationOffset="270" backgroundAlpha="255">
+          <fontProperties description="Sans Serif,9,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute label="" field="" color="#000000"/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings obstacle="0" priority="0" placement="1" zIndex="0" linePlacementFlags="18" dist="0" showAll="1">
+      <DiagramLayerSettings priority="0" zIndex="0" dist="0" obstacle="0" placement="1" linePlacementFlags="18" showAll="1">
         <properties>
           <Option type="Map">
-            <Option name="name" type="QString" value=""/>
+            <Option type="QString" name="name" value=""/>
             <Option name="properties"/>
-            <Option name="type" type="QString" value="collection"/>
+            <Option type="QString" name="type" value="collection"/>
           </Option>
         </properties>
       </DiagramLayerSettings>
@@ -597,11 +528,11 @@
         </field>
       </fieldConfiguration>
       <aliases>
-        <alias name="" field="t_id" index="0"/>
-        <alias name="" field="t_ili_tid" index="1"/>
-        <alias name="" field="kantonsnam" index="2"/>
-        <alias name="" field="kantonskue" index="3"/>
-        <alias name="" field="kantonsnum" index="4"/>
+        <alias index="0" name="" field="t_id"/>
+        <alias index="1" name="" field="t_ili_tid"/>
+        <alias index="2" name="" field="kantonsnam"/>
+        <alias index="3" name="" field="kantonskue"/>
+        <alias index="4" name="" field="kantonsnum"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -613,11 +544,11 @@
         <default applyOnUpdate="0" expression="" field="kantonsnum"/>
       </defaults>
       <constraints>
-        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="t_id" constraints="0"/>
-        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="t_ili_tid" constraints="0"/>
-        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="kantonsnam" constraints="0"/>
-        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="kantonskue" constraints="0"/>
-        <constraint exp_strength="0" unique_strength="0" notnull_strength="0" field="kantonsnum" constraints="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="t_id" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="t_ili_tid" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="kantonsnam" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="kantonskue" notnull_strength="0"/>
+        <constraint exp_strength="0" constraints="0" unique_strength="0" field="kantonsnum" notnull_strength="0"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="t_id"/>
@@ -630,14 +561,14 @@
       <attributeactions>
         <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
-          <column name="t_id" type="field" hidden="0" width="-1"/>
-          <column name="t_ili_tid" type="field" hidden="0" width="-1"/>
-          <column type="actions" hidden="1" width="-1"/>
-          <column name="kantonsnam" type="field" hidden="0" width="-1"/>
-          <column name="kantonskue" type="field" hidden="0" width="-1"/>
-          <column name="kantonsnum" type="field" hidden="0" width="-1"/>
+          <column type="field" name="t_id" width="-1" hidden="0"/>
+          <column type="field" name="t_ili_tid" width="-1" hidden="0"/>
+          <column type="actions" width="-1" hidden="1"/>
+          <column type="field" name="kantonsnam" width="-1" hidden="0"/>
+          <column type="field" name="kantonskue" width="-1" hidden="0"/>
+          <column type="field" name="kantonsnum" width="-1" hidden="0"/>
         </columns>
       </attributetableconfig>
       <conditionalstyles>
@@ -679,21 +610,21 @@ def my_form_open(dialog, layer, feature):
         <field name="t_ili_tid" editable="1"/>
       </editable>
       <labelOnTop>
-        <field labelOnTop="0" name="fid"/>
-        <field labelOnTop="0" name="kantonskue"/>
-        <field labelOnTop="0" name="kantonskuerzel"/>
-        <field labelOnTop="0" name="kantonsnam"/>
-        <field labelOnTop="0" name="kantonsname"/>
-        <field labelOnTop="0" name="kantonsnum"/>
-        <field labelOnTop="0" name="kantonsnummer"/>
-        <field labelOnTop="0" name="t_id"/>
-        <field labelOnTop="0" name="t_ili_tid"/>
+        <field name="fid" labelOnTop="0"/>
+        <field name="kantonskue" labelOnTop="0"/>
+        <field name="kantonskuerzel" labelOnTop="0"/>
+        <field name="kantonsnam" labelOnTop="0"/>
+        <field name="kantonsname" labelOnTop="0"/>
+        <field name="kantonsnum" labelOnTop="0"/>
+        <field name="kantonsnummer" labelOnTop="0"/>
+        <field name="t_id" labelOnTop="0"/>
+        <field name="t_ili_tid" labelOnTop="0"/>
       </labelOnTop>
       <widgets/>
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer minScale="1e+8" autoRefreshTime="0" refreshOnNotifyEnabled="0" type="raster" styleCategories="AllStyleCategories" autoRefreshEnabled="0" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" maxScale="0">
+    <maplayer refreshOnNotifyEnabled="0" refreshOnNotifyMessage="" type="raster" maxScale="0" autoRefreshEnabled="0" autoRefreshTime="0" minScale="1e+8" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0">
       <extent>
         <xmin>2315000</xmin>
         <ymin>913000</ymin>
@@ -750,7 +681,7 @@ def my_form_open(dialog, layer, feature):
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxy="0" maxx="0" maxz="0" minx="0" crs="" dimensions="2" miny="0" minz="0"/>
+          <spatial minx="0" maxy="0" miny="0" crs="" dimensions="2" minz="0" maxx="0" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -761,7 +692,7 @@ def my_form_open(dialog, layer, feature):
       </resourceMetadata>
       <provider>gdal</provider>
       <noData>
-        <noDataList useSrcNoData="0" bandNo="1">
+        <noDataList bandNo="1" useSrcNoData="0">
           <noDataRange min="0" max="0"/>
         </noDataList>
       </noData>
@@ -780,7 +711,7 @@ def my_form_open(dialog, layer, feature):
         <property key="identify/format" value="Value"/>
       </customproperties>
       <pipe>
-        <rasterrenderer alphaBand="-1" grayBand="1" gradient="WhiteToBlack" opacity="1" type="singlebandgray">
+        <rasterrenderer grayBand="1" type="singlebandgray" alphaBand="-1" gradient="WhiteToBlack" opacity="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>MinMax</limits>
@@ -796,8 +727,8 @@ def my_form_open(dialog, layer, feature):
             <algorithm>StretchToMinimumMaximum</algorithm>
           </contrastEnhancement>
         </rasterrenderer>
-        <brightnesscontrast contrast="0" brightness="0"/>
-        <huesaturation colorizeRed="255" colorizeGreen="128" colorizeStrength="100" saturation="0" grayscaleMode="0" colorizeOn="0" colorizeBlue="128"/>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeBlue="128" colorizeOn="0" colorizeGreen="128" grayscaleMode="0" colorizeStrength="100" saturation="0" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
@@ -810,118 +741,118 @@ def my_form_open(dialog, layer, feature):
     <layer id="ch_swisstopo_orthofoto_2018_rgb_e2b5e7b4_656f_4af1_9ee8_960f7ffcef35"/>
   </layerorder>
   <properties>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WCSUrl type="QString"></WCSUrl>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WFSTLayers>
-      <Update type="QStringList"/>
-      <Insert type="QStringList"/>
-      <Delete type="QStringList"/>
-    </WFSTLayers>
+    <DefaultStyles>
+      <Opacity type="double">1</Opacity>
+      <ColorRamp type="QString"></ColorRamp>
+      <RandomColors type="bool">true</RandomColors>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <Fill type="QString"></Fill>
+    </DefaultStyles>
+    <WCSLayers type="QStringList"/>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <Paths>
       <Absolute type="bool">true</Absolute>
     </Paths>
-    <WMSUrl type="QString"></WMSUrl>
-    <WMSRestrictedLayers type="QStringList"/>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSFees type="QString">conditions unknown</WMSFees>
     <WMSCrsList type="QStringList">
       <value>EPSG:4326</value>
       <value>EPSG:2056</value>
     </WMSCrsList>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <Measurement>
-      <AreaUnits type="QString">m2</AreaUnits>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-    </Measurement>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSFees type="QString">conditions unknown</WMSFees>
-    <WMSRootName type="QString">ch.so.agi.hintergrundkarte_ortho</WMSRootName>
+    <WMSRestrictedComposers type="QStringList"/>
+    <Gui>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+    </Gui>
+    <WCSUrl type="QString"></WCSUrl>
     <WMSContactOrganization type="QString">AGI SO</WMSContactOrganization>
-    <WCSLayers type="QStringList"/>
-    <WMSPrecision type="QString">8</WMSPrecision>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <PositionPrecision>
-      <Automatic type="bool">true</Automatic>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
     <WMTSJpegLayers>
       <Project type="bool">false</Project>
       <Layer type="QStringList"/>
       <Group type="QStringList"/>
     </WMTSJpegLayers>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMTSPngLayers>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+    </WMTSPngLayers>
+    <WMSServiceTitle type="QString">ch.so.agi.hintergrundkarte_ortho</WMSServiceTitle>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <TextFormat type="int">0</TextFormat>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+    </PAL>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WFSUrl type="QString"></WFSUrl>
+    <WFSLayers type="QStringList"/>
+    <WMSRootName type="QString">ch.so.agi.hintergrundkarte_ortho</WMSRootName>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
     <WMSExtent type="QStringList">
       <value>2570000</value>
       <value>1208000</value>
       <value>2667000</value>
       <value>1268000</value>
     </WMSExtent>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <Gui>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-    </Gui>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
-    <WFSLayers type="QStringList"/>
-    <PAL>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <TextFormat type="int">0</TextFormat>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <SearchMethod type="int">0</SearchMethod>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-    </PAL>
-    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <WMSServiceTitle type="QString">ch.so.agi.hintergrundkarte_ortho</WMSServiceTitle>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <Measure>
-      <Ellipsoid type="QString">bessel</Ellipsoid>
-    </Measure>
-    <WMSRestrictedComposers type="QStringList"/>
-    <WMTSPngLayers>
-      <Project type="bool">false</Project>
-      <Layer type="QStringList"/>
-      <Group type="QStringList"/>
-    </WMTSPngLayers>
     <WMTSLayers>
       <Project type="bool">false</Project>
       <Layer type="QStringList"/>
       <Group type="QStringList"/>
     </WMTSLayers>
-    <DefaultStyles>
-      <Opacity type="double">1</Opacity>
-      <Fill type="QString"></Fill>
-      <ColorRamp type="QString"></ColorRamp>
-      <Line type="QString"></Line>
-      <Marker type="QString"></Marker>
-      <RandomColors type="bool">true</RandomColors>
-    </DefaultStyles>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
   </properties>
   <visibility-presets/>
   <transformContext/>
