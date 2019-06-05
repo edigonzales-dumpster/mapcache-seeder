@@ -80,6 +80,7 @@ COPY qgis/qgs/ch.so.agi.hintergrundkarte_sw.qgs /data/ch.so.agi.hintergrundkarte
 COPY qgis/qgs/ch.so.agi.hintergrundkarte_farbig.qgs /data/ch.so.agi.hintergrundkarte_farbig.qgs
 COPY qgis/qgs/ch.bl.agi.lidar_2018.dsm_hillshade.qgs /data/ch.bl.agi.lidar_2018.dsm_hillshade.qgs
 COPY qgis/qgs/ch.bl.agi.lidar_2018.dtm_hillshade.qgs /data/ch.bl.agi.lidar_2018.dtm_hillshade.qgs
+COPY qgis/qgs/ch.bl.agi.lidar_2018.dtm_slope.qgs /data/ch.bl.agi.lidar_2018.dtm_slope.qgs
 COPY qgis/qgs/ch.bl.agi.lidar_2018.ndsm_buildings.qgs /data/ch.bl.agi.lidar_2018.ndsm_buildings.qgs
 COPY qgis/qgs/ch.bl.agi.lidar_2018.ndsm_vegetation.qgs /data/ch.bl.agi.lidar_2018.ndsm_vegetation.qgs
 

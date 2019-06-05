@@ -135,6 +135,20 @@
     </http>
   </source>
 
+  <source name="ch.bl.agi.lidar_2018.dtm_slope" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.bl.agi.lidar_2018.dtm_slope</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.bl.agi.lidar_2018.dtm_slope</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>
+
   <source name="ch.bl.agi.lidar_2018.ndsm_buildings" type="wms">
     <getmap>
       <params>
@@ -205,6 +219,16 @@
 
   <tileset name="ch.bl.agi.lidar_2018.dtm_hillshade">
     <source>ch.bl.agi.lidar_2018.dtm_hillshade</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
+    <format>PNG</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>
+
+  <tileset name="ch.bl.agi.lidar_2018.dtm_slope">
+    <source>ch.bl.agi.lidar_2018.dtm_slope</source>
     <cache>sqlite</cache>
     <grid restricted_extent="2590000,1238600,2643000,1272000">2056</grid>
     <format>PNG</format>

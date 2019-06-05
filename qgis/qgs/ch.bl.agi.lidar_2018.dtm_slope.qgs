@@ -1,0 +1,325 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.4.7-Madeira">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+      <srsid>47</srsid>
+      <srid>2056</srid>
+      <authid>EPSG:2056</authid>
+      <description>CH1903+ / LV95</description>
+      <projectionacronym>somerc</projectionacronym>
+      <ellipsoidacronym>bessel</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer name="ch.bl.agi.lidar_2018.dtm_slope" id="ch_bl_agi_lidar_2018_dtm_slope_db86bb56_6583_4788_8453_533cd34d5552" source="/geodata/ch.bl.agi.lidar_2018.dtm_slope/ch.bl.agi.lidar_2018.dtm_slope.tif" expanded="1" providerKey="gdal" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>ch_bl_agi_lidar_2018_dtm_slope_db86bb56_6583_4788_8453_533cd34d5552</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings type="1" unit="1" tolerance="12" intersection-snapping="0" enabled="0" mode="2">
+    <individual-layer-settings/>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas name="theMapCanvas" annotationsVisible="1">
+    <units>meters</units>
+    <extent>
+      <xmin>2589225</xmin>
+      <ymin>1240812.5</ymin>
+      <xmax>2642775</xmax>
+      <ymax>1269687.5</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+        <srsid>47</srsid>
+        <srid>2056</srid>
+        <authid>EPSG:2056</authid>
+        <description>CH1903+ / LV95</description>
+        <projectionacronym>somerc</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer name="ch.bl.agi.lidar_2018.dtm_slope" open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ch_bl_agi_lidar_2018_dtm_slope_db86bb56_6583_4788_8453_533cd34d5552" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <projectlayers>
+    <maplayer type="raster" minScale="1e+8" refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" styleCategories="AllStyleCategories" autoRefreshEnabled="0" hasScaleBasedVisibilityFlag="0" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>2590500</xmin>
+        <ymin>1241500</ymin>
+        <xmax>2641500</xmax>
+        <ymax>1269000</ymax>
+      </extent>
+      <id>ch_bl_agi_lidar_2018_dtm_slope_db86bb56_6583_4788_8453_533cd34d5552</id>
+      <datasource>/geodata/ch.bl.agi.lidar_2018.dtm_slope/ch.bl.agi.lidar_2018.dtm_slope.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ch.bl.agi.lidar_2018.dtm_slope</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial maxy="0" minz="0" maxz="0" dimensions="2" crs="" maxx="0" minx="0" miny="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0">
+          <noDataRange min="0" max="0"/>
+        </noDataList>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer type="singlebandpseudocolor" classificationMax="73" classificationMin="0" band="1" opacity="1" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <rastershader>
+            <colorrampshader colorRampType="INTERPOLATED" clip="0" classificationMode="1">
+              <colorramp type="gradient" name="[source]">
+                <prop k="color1" v="250,250,250,255"/>
+                <prop k="color2" v="5,5,5,255"/>
+                <prop k="discrete" v="0"/>
+                <prop k="rampType" v="gradient"/>
+              </colorramp>
+              <item label="0" value="0" color="#ffffff" alpha="255"/>
+              <item label="73" value="73" color="#050505" alpha="255"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation saturation="0" colorizeOn="0" colorizeRed="255" colorizeGreen="128" colorizeBlue="128" colorizeStrength="100" grayscaleMode="0"/>
+        <rasterresampler maxOversampling="4" zoomedOutResampler="bilinear"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="ch_bl_agi_lidar_2018_dtm_slope_db86bb56_6583_4788_8453_533cd34d5552"/>
+  </layerorder>
+  <properties>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <Measure>
+      <Ellipsoid type="QString">bessel</Ellipsoid>
+    </Measure>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMTSJpegLayers>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WMSCrsList type="QStringList">
+      <value>EPSG:2056</value>
+      <value>EPSG:4326</value>
+    </WMSCrsList>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WCSLayers type="QStringList"/>
+    <DefaultStyles>
+      <RandomColors type="bool">true</RandomColors>
+      <Marker type="QString"></Marker>
+      <ColorRamp type="QString"></ColorRamp>
+      <Opacity type="double">1</Opacity>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+    </DefaultStyles>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
+    <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
+    <WMTSPngLayers>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WFSLayers type="QStringList"/>
+    <PAL>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <TextFormat type="int">0</TextFormat>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+    </PAL>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSServiceCapabilities type="bool">true</WMSServiceCapabilities>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMSExtent type="QStringList">
+      <value>2590000</value>
+      <value>1238600</value>
+      <value>2643000</value>
+      <value>1272000</value>
+    </WMSExtent>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSRootName type="QString">ch.bl.agi.lidar_2018.dtm_slope</WMSRootName>
+    <WMSServiceTitle type="QString">ch.bl.agi.lidar_2018.dtm_slope</WMSServiceTitle>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMTSLayers>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString">AGI SO</WMSContactOrganization>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author>vagrant</author>
+    <creation>2019-05-23T07:56:23</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>
