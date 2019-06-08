@@ -75,8 +75,12 @@ docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dtm_slope -f -z 0,14 -n 4
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_buildings -f -z 0,14 -n 4
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_vegetation -f -z 0,14 -n 6
-docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.orthofoto_1993.grau -f -z 0,14 -n 3
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.orthofoto_1993.grau -f -z 0,10 -n 3
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.orthofoto_1993.grau -f -z 11,14 -n 4 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
+
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.orthofoto_2002.rgb -f -z 0,14 -n 3
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.orthofoto_2002.rgb -f -z 10,10 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.orthofoto_2002.rgb -f -z 11,14 -n 4 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
 
 
 ```
