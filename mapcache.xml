@@ -205,6 +205,34 @@
     </http>
   </source>  
 
+  <source name="ch.so.agi.orthofoto_2006.rgb" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.so.agi.orthofoto_2006.rgb</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.so.agi.orthofoto_2006.rgb</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>  
+
+  <source name="ch.so.agi.orthofoto_2007.rgb" type="wms">
+    <getmap>
+      <params>
+        <FORMAT>image/png</FORMAT>
+        <LAYERS>ch.so.agi.orthofoto_2007.rgb</LAYERS>
+        <TRANSPARENT>true</TRANSPARENT>
+      </params>
+    </getmap>
+    <http>
+      <url>http://localhost/qgis/ch.so.agi.orthofoto_2007.rgb</url>
+      <connection_timeout>60</connection_timeout>
+    </http>
+  </source>  
+
   <tileset name="ch.so.agi.hintergrundkarte_ortho">
     <source>ch.so.agi.hintergrundkarte_ortho</source>
     <cache>sqlite</cache>
@@ -289,7 +317,7 @@
     <source>ch.so.agi.orthofoto_1993.grau</source>
     <cache>sqlite</cache>
     <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
-    <format>myjpeg</format>
+    <format>PNG</format>
     <metatile>8 8</metatile>
     <metabuffer>0</metabuffer>
     <expires>604800</expires>
@@ -299,7 +327,27 @@
     <source>ch.so.agi.orthofoto_2002.rgb</source>
     <cache>sqlite</cache>
     <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
-    <format>myjpeg</format>
+    <format>PNG</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>  
+
+  <tileset name="ch.so.agi.orthofoto_2006.rgb">
+    <source>ch.so.agi.orthofoto_2006.rgb</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2588000,1226000,2648500,1263000">2056</grid>
+    <format>PNG</format>
+    <metatile>8 8</metatile>
+    <metabuffer>0</metabuffer>
+    <expires>604800</expires>
+  </tileset>  
+
+  <tileset name="ch.so.agi.orthofoto_2007.rgb">
+    <source>ch.so.agi.orthofoto_2007.rgb</source>
+    <cache>sqlite</cache>
+    <grid restricted_extent="2570000,1208000,2667000,1268000">2056</grid>
+    <format>PNG</format>
     <metatile>8 8</metatile>
     <metabuffer>0</metabuffer>
     <expires>604800</expires>

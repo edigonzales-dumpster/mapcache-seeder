@@ -85,6 +85,8 @@ COPY qgis/qgs/ch.bl.agi.lidar_2018.ndsm_buildings.qgs /data/ch.bl.agi.lidar_2018
 COPY qgis/qgs/ch.bl.agi.lidar_2018.ndsm_vegetation.qgs /data/ch.bl.agi.lidar_2018.ndsm_vegetation.qgs
 COPY qgis/qgs/ch.so.agi.orthofoto_1993.grau.qgs /data/ch.so.agi.orthofoto_1993.grau.qgs
 COPY qgis/qgs/ch.so.agi.orthofoto_2002.rgb.qgs /data/ch.so.agi.orthofoto_2002.rgb.qgs
+COPY qgis/qgs/ch.so.agi.orthofoto_2006.rgb.qgs /data/ch.so.agi.orthofoto_2006.rgb.qgs
+COPY qgis/qgs/ch.so.agi.orthofoto_2007.rgb.qgs /data/ch.so.agi.orthofoto_2007.rgb.qgs
 
 EXPOSE 80
 
