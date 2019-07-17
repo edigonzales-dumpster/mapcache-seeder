@@ -48,7 +48,6 @@ Interne QGIS-Projekt-Dateien verwenden und Tiles-Verzeichnis mounten:
 docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata:delegated -v /Users/stefan/tmp/tiles:/tiles:cached -e QGIS_FCGI_MIN_PROCESSES=4 -e QGIS_FCGI_MAX_PROCESSES=4 --rm --name wmts-seeder sogis/wmts-seeder
 ```
 
-
 In Container einloggen:
 ```
 bash -c "clear && docker exec -it wmts-seeder /bin/bash"
@@ -59,12 +58,15 @@ Seeden (vorgängig Container starten):
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 11,14 -n 4
 ```
 
-**Achtung:** Es ist in den allermeisten Fällen für uns nicht sinnvoll (ausser wahrscheinlich beim Plan für das Grundbuch) einen anderen Perimeter als den `restrict_extent` beim Seeden zu wählen. Wird z.B. eine gebufferte Kantonsgrenze gewählt, wird früher oder später (eher früher) durch das Verwenden der Karte im Web GIS Client ein Seeden der fehlenden Kacheln getriggert. Dies darf aus verschiedenen Gründen (Last, WMS anders oder nicht verfügbar) nicht passieren. D.h. wenn alles im `restrict_extent` geseeded wird und kein `auto_expire` gesetzt wird, wird nie durch jemanden Externes ein Seedprozess ausgelöst.
+**Achtung:** Es ist in den allermeisten Fällen für uns nicht sinnvoll (ausser wahrscheinlich beim Plan für das Grundbuch) einen anderen Perimeter als den `restrict_extent` beim Seeden zu wählen. Wird z.B. eine gebufferte Kantonsgrenze gewählt, wird früher oder später (eher früher) durch das Verwenden der Hintergrundkarte im Web GIS Client ein Seeden der fehlenden Kacheln getriggert. Dies darf aus verschiedenen Gründen (Last, WMS anders oder nicht verfügbar) nicht passieren. D.h. wenn alles im `restrict_extent` geseeded wird und kein `auto_expire` gesetzt wird, wird nie durch jemanden Externes ein Seedprozess ausgelöst.
 
 Ausgeführte Befehle:
 
 ```
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,9 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_sw -f -z 0,10 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_farbig -f -z 0,10 -n 4
 ```
 
 
