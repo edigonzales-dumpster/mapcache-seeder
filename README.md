@@ -64,9 +64,16 @@ Ausgeführte Befehle:
 
 ```
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,14 -n 4
-docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,9 -n 4
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_sw -f -z 0,10 -n 4
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_farbig -f -z 0,10 -n 4
+
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dsm_hillshade -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dtm_hillshade -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dtm_slope -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_buildings -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_vegetation -f -z 0,14 -n 4
+
+
 ```
 
 
