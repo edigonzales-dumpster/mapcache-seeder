@@ -43,14 +43,9 @@ Externe QGIS-Projekt-Dateien mounten:
 docker run -p 80:80 -v /Users/stefan/sources/wmts-seeder/qgis/qgs:/data -v /Volumes/Samsung_T5:/geodata -e QGIS_FCGI_MIN_PROCESSES=4 -e QGIS_FCGI_MAX_PROCESSES=4 sogis/wmts-seeder --rm --name wmts-seeder sogis/wmts-seeder
 ```
 
-Interne QGIS-Projekt-Dateien verwenden:
+Interne QGIS-Projekt-Dateien verwenden und Tiles-Verzeichnis mounten:
 ```
-docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata -e QGIS_FCGI_MIN_PROCESSES=4 -e QGIS_FCGI_MAX_PROCESSES=4 sogis/wmts-seeder --rm --name wmts-seeder sogis/wmts-seeder
-```
-
-Tiles-Verzeichnis mounten:
-```
-docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata:cached -v /Users/stefan/tmp/tiles:/tiles:cached -e QGIS_FCGI_MIN_PROCESSES=6 -e QGIS_FCGI_MAX_PROCESSES=6 --rm --name wmts-seeder sogis/wmts-seeder
+docker run -p 80:80 -v /Volumes/Samsung_T5:/geodata:delegated -v /Users/stefan/tmp/tiles:/tiles:cached -e QGIS_FCGI_MIN_PROCESSES=4 -e QGIS_FCGI_MAX_PROCESSES=4 --rm --name wmts-seeder sogis/wmts-seeder
 ```
 
 In Container einloggen:
@@ -60,12 +55,31 @@ bash -c "clear && docker exec -it wmts-seeder /bin/bash"
 
 Seeden (vorgängig Container starten):
 ```
-docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 11,14 -n 4 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 11,14 -n 4
+```
+
+**Achtung:** Es ist in den allermeisten Fällen für uns nicht sinnvoll (ausser wahrscheinlich beim Plan für das Grundbuch) einen anderen Perimeter als den `restrict_extent` beim Seeden zu wählen. Wird z.B. eine gebufferte Kantonsgrenze gewählt, wird früher oder später (eher früher) durch das Verwenden der Hintergrundkarte im Web GIS Client ein Seeden der fehlenden Kacheln getriggert. Dies darf aus verschiedenen Gründen (Last, WMS anders oder nicht verfügbar) nicht passieren. D.h. wenn alles im `restrict_extent` geseeded wird und kein `auto_expire` gesetzt wird, wird nie durch jemanden Externes ein Seedprozess ausgelöst.
+
+Ausgeführte Befehle:
+
+```
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_sw -f -z 0,10 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_farbig -f -z 0,10 -n 4
+
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dsm_hillshade -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dtm_hillshade -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dtm_slope -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_buildings -f -z 0,14 -n 4
+docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.ndsm_vegetation -f -z 0,14 -n 4
 
 
 ```
 
-Ausgeführte Befehle:
+
+
+
+**ALT -> REDO**: Ausgeführte Befehle:
 ```
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.bl.agi.lidar_2018.dsm_hillshade -f -z 0,14 -n 4
 docker exec -it wmts-seeder mapcache_seed -c /mapcache/mapcache.xml -t ch.so.agi.hintergrundkarte_ortho -f -z 0,14 -n 6 -d /data/wmts-seeding-perimeter.gpkg -l kanton1000m
